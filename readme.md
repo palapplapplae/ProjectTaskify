@@ -12,7 +12,7 @@
 
 ![Alt text](./readmeImage/1_start.png)
 
-2. กรอกรายละเอียดของ project ที่ต้องการ**ให้ครบทุกช่อง** จากนั้นกดปุ่ม "Save" เพื่อบันทึก หรือกด "Cancle" เพื่อยกเลิก project ดังกล่าว
+2. กรอกรายละเอียดของ project ที่ต้องการ**ให้ครบทุกช่อง**  ยกเว้น ICON จะตั้งหรือไม่ก็ได้ จากนั้นกดปุ่ม "Save" เพื่อบันทึก หรือกด "Cancle" เพื่อยกเลิก project ดังกล่าว
 
 ![Alt text](./readmeImage/2_addProject.png)
 
@@ -39,7 +39,7 @@
     - **In progress** : task ที่เริ่มดำเนินการแล้ว แต่ยังไม่เสร็จสมบูรณ์
     - **Done :** task ที่ดำเนินการเสร็จสมบูรณ์แล้ว
 
-6. task ที่ถูกเปลี่ยนสถานะจะถูกนำไปแสดงเป็นแถบสีบน Progress Bar ซึ่ง*แถบสีดำ หมายถึง task ที่มีสถานะ Done* และ *แถบสีส้ม หมายถึง task ที่มีถานะ In progress* ส่วน Progress Percentage จะถูกคำนวณจาก Done task เท่านั้น
+6. task ที่ถูกเปลี่ยนสถานะจะถูกนำไปแสดงเป็นแถบสีบน Progress Bar ซึ่ง*แถบไล่สีน้ำเงิน หมายถึง task ที่มีสถานะ Done* และ *แถบสีฟ้า หมายถึง task ที่มีถานะ In progress* ส่วน Progress Percentage จะถูกคำนวณจาก Done task เท่านั้น
 
 ![Alt text](./readmeImage/6_tasksUpdate.png)
 
