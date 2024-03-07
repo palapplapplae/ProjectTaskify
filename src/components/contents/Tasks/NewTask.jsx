@@ -25,7 +25,7 @@ const NewTask = ({ onAdd }) => {
         <div className="flex item-center gap-3">
             <input
                 type="text"
-                className="w-[23vw] px-2 py-1 rounded-md bg-stone-200"
+                className="w-[23vw] px-2 py-1 rounded-md bg-white/75 drop-shadow-md"
                 onChange={handleEnterTask}
                 value={enterTask}
             />

@@ -150,7 +150,7 @@ function App() {
 
     /*-------------------------------------------------------------------------------------------------------------------------------*/
     return (
-        <main className="h-screen flex gap-10 overflow-y-hidden">
+        <main className="h-screen flex gap-10 overflow-y-hidden font-raleway bg-indigo-200/25">
             <NavBar
                 onStartAddProj={handleStartAddProj}
                 projects={projState.projects}

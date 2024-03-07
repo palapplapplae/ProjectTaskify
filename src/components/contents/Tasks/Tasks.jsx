@@ -26,15 +26,15 @@ const Tasks = ({ tasks, onAdd, onDelete, onChangeStatus }) => {
                 {
                     // if have some tasks will show its details
                     tasks.length > 0 && (
-                        <ul className="p-4 mt-8 rounded-md bg-stone-100 overflow-y-auto max-h-[100%]">
+                        <ul className="p-4 mt-8 rounded-md bg-white/75 overflow-y-auto max-h-[100%] drop-shadow-md">
                             {
                                 // loop through all element in tasks array to do the following instruction
                                 tasks.map((task) => {
                                     let selectOptionClass = "mx-4 px-1 rounded-md";
-                                    if (task.status === "0") selectOptionClass += " bg-sky-600/30";
+                                    if (task.status === "0") selectOptionClass += " bg-amber-300/50"; // To do
                                     else if (task.status === "1")
-                                        selectOptionClass += " bg-amber-500/40";
-                                    else selectOptionClass += " bg-lime-500/40";
+                                        selectOptionClass += " bg-blue-200/90";                     // Inprogress
+                                    else selectOptionClass += " bg-indigo-800/25";                    // Done
 
                                     return (
                                         <li key={task.id} className="flex justify-between my-4">

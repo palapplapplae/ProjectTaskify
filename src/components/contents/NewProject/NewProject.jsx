@@ -7,6 +7,7 @@ import Modal from "../../util/Modal";
 const NewProject = ({ onAddProj, onCancleProj }) => {
     const modal = useRef();
 
+    const icon = useRef();
     const title = useRef();
     const desc = useRef();
     const dueDate = useRef();
@@ -14,6 +15,7 @@ const NewProject = ({ onAddProj, onCancleProj }) => {
     const handleSave = (event) => {
         event.preventDefault();
 
+        const enteredIcon = icon.current.value;
         const enteredTitle = title.current.value;
         const enteredDesc = desc.current.value;
         const enteredDueDate = dueDate.current.value;
@@ -33,7 +35,7 @@ const NewProject = ({ onAddProj, onCancleProj }) => {
         }
 
         onAddProj({
-            title: enteredTitle,
+            title: enteredIcon.trim() + enteredTitle.trim(),
             desc: enteredDesc,
             dueDate: enteredDueDate,
         });
@@ -58,6 +60,7 @@ const NewProject = ({ onAddProj, onCancleProj }) => {
                     </li>
                 </menu>
                 <div>
+                    <NewProjectInput type="text" ref={icon} label={"ICON"} />
                     <NewProjectInput type="text" ref={title} label={"TITLE"} />
                     <NewProjectInput
                         ref={desc}
